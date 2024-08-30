@@ -1,0 +1,59 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    Label:
+        text: 'To-Do List with Rewards'
+        font_size: 32
+        size_hint_y: None
+        height: 60
+
+    BoxLayout:
+        size_hint_y: None
+        height: 40
+
+        TextInput:
+            id: task_input
+            hint_text: 'Enter a new task'
+            multiline: False
+
+        Button:
+            text: 'Add Task'
+            on_press: app.add_task()
+
+    BoxLayout:
+        Label:
+            text: 'Tasks:'
+            font_size: 24
+
+    BoxLayout:
+        id: task_list
+        orientation: 'vertical'
+
+    BoxLayout:
+        size_hint_y: None
+        height: 40
+
+        Button:
+            text: 'Complete Selected Task'
+            on_press: app.complete_task()
+
+    BoxLayout:
+        size_hint_y: None
+        height: 40
+
+        Label:
+            text: 'Rewards:'
+            font_size: 24
+
+        Label:
+            id: reward_label
+            text: '0'
+            font_size: 24
+
+    BoxLayout:
+        size_hint_y: None
+        height: 40
+
+        Button:
+            text: 'Redeem Rewards'
+            on_press: app.redeem_rewards()
