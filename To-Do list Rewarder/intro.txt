@@ -5,7 +5,7 @@ This project helped me in understanding the proper implementation of file handli
 
 Hoping for the same for you guys as well,
 to start the application you need copy the code that is being provided, after coping all the codes in the same directory,
-open the terminal for the same and the followinf bash command "python main.py" in the terminal. This would open up the 
+open the terminal for the same and the following bash command "python main.py" in the terminal. This would open up the 
 application and hence you can start using the To-Do app.
 
 I will be adding more contents to it in the near future so as to improve it even more.
